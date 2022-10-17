@@ -44,5 +44,13 @@
 // 	// ws://localhost:8081/websocket
 // 	r.GET("/websocket", ws)
 
+// 	r.GET("/api/:test", func(ctx *gin.Context) {
+// 		ctx.JSON(200, gin.H{
+// 			"rc":   0,
+// 			"msg":  "success",
+// 			"data": ctx.Param("test"),
+// 		})
+// 	})
+
 // 	r.Run(":8081") // 监听并在 0.0.0.0:8081 上启动服务
 // }
